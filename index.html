@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Portfolio - Jack Harrison</title>
+    <link rel="shortcut icon" href="img/site-icon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).load(function () { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({ 'overflow': 'visible' });
+        })
+        //]]>
+    </script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        body {
+            overflow: hidden;
+            background-image: url(img/main-background1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fff; /* change if the mask should have another color then white */
+            z-index: 99; /* makes sure it stays on top */
+        }
+
+        #status {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%; /* centers the loading animation horizontally one the screen */
+            top: 50%; /* centers the loading animation vertically one the screen */
+            background-image: url(../img/loading.gif); /* path to your loading animation */
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: -100px 0 0 -100px; /* is width and height divided by two */
+        }
+    </style>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!--Navbar for Desktop. Disabled on Mobile Devices-->
+    <nav class="hidden-xs navbar navbar-default">
+        <div style="margin-left:10%; margin-right:10%;" class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Jack Harrison Sites</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                <ul class="nav navbar-nav" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                    <li role="presentation"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">Projects</a></li>
+                    <li role="presentation"><a href="#experience" aria-controls="experiences" role="tab" data-toggle="tab">Experiences</a></li>
+                    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- Tab panes -->
+    <div style="margin-left:10%; margin-right:10%;" class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div style="margin-top:50px; padding: 10px;" class="well well-lg">
+                <div class="page-header">
+                    <h1>Welcome to Jack Harrison Sites</h1>
+                </div>
+                <h1><small>About Me</small></h1>
+                <p>My name is Jack Harrison. I am a computung student at Blackpool and the Fylde College currently stuying Interactive Media Development.</p>
+                <p>My main interest is in front end website development using frameworks such as bootstrap which is what this website is built in. </p>
+                <p>I also have interest in back end server managment with MySQL and XML.</p>
+                <p>The main web languages i prefer to use are HTML, CSS, jQuery and a little PHP.</p>
+                <h1><small>Personal Interests</small></h1>
+                <p>My personal interests include Computing, Gaming, Videos/Movies and Music.</p>
+            </div>
+
+            <div style="margin-bottom:65px;" class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/screen.png" alt="Screen" width="200" /></img>
+                        <div class="caption">
+                            <h3>Projects</h3>
+                            <p>View all my projects i have worked on and view projects in the making here. All of my websites i have worked on are accessable through here.</p>
+                            <p><a href="#projects" class="btn btn-primary" role="button" data-toggle="tab">Browse Projects</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/html5.png" alt="HTML5 Logo" width="200" />
+                        <div class="caption">
+                            <h3>Skill and Experience</h3>
+                            <p>See all my current skill level and experience in web development. With languages ranging from HTML, CSS, PHP, jQuery and more.</p>
+                            <p><a href="#experience" class="btn btn-primary" role="button" data-toggle="tab">View Skills and Experience</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="img/gmail.png" alt="Gmail Logo" width="200" /></img>
+                        <div class="caption">
+                            <h3>Get In Contact</h3>
+                            <p>If you request a website to be made and need to contact me. Please view my contact page for all available methods of contact.</p>
+                            <p><a href="#contact" class="btn btn-primary" role="button" data-toggle="tab">View Contact Details</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="projects">
+            <div style="margin-top:50px; padding: 10px;" class="well well-lg">
+                <div class="page-header">
+                    <h1>Projects From Blackpool And Fylde College</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="img/approachingnirvana-db.jpg" alt="Approaching Nirvana DB Preview" /></img>
+                            <div class="caption">
+                                <h3>Approaching Nirvana - Database Version</h3>
+                                <p>This is my Thirsd website project i made during my first year in Blackpool And The Fylde College. It demonstrates my knowledge of MySQL, PHP and</p>
+                                <!-- Large modal -->
+                                <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#largeModal">View Site</a>
+                                <a href="http://approachingnirvana-db.jack-harrison-sites.co.uk" target="_blank" class="btn btn-lg btn-primary">Open In New Tab</a>
+                                <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+                                    <div style="width:90%;" class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">Approaching Nirvana - Database Version</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe src="http://approachingnirvana-db.jack-harrison-sites.co.uk" height="550" width="100%" frameborder="0" scrolling="auto">You need an iframes capable browser to view this content.</iframe>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="img/approachingnirvana.jpg" alt="Approaching Nirvana Preview" />
+                            <div class="caption">
+                                <h3>Approaching Nirvana</h3>
+                                <p>This is my second website project i made during my first year in Blackpool And The Fylde College. It demonstrates my knowledge of jQuery, AJAX and PHP.</p>
+                                <!-- Large modal -->
+                                <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#largeModal2">View Site</a>
+                                <a href="http://approachingnirvana.jack-harrison-sites.co.uk" target="_blank" class="btn btn-lg btn-primary">Open In New Tab</a>
+                                <div class="modal fade" id="largeModal2" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+                                    <div style="width:90%;" class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">Approaching Nirvana</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe src="http://approachingnirvana.jack-harrison-sites.co.uk" height="550" width="100%" frameborder="0" scrolling="auto">You need an iframes capable browser to view this content.</iframe>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="img/filmarena.jpg" alt="Film Arena Preview" />
+                            <div class="caption">
+                                <h3>Film Arena</h3>
+                                <p>This is my first website project i made during my first year in Blackpool And The Fydle College. This site was made to demonstrate my knowledge of HTML and CSS. </p>
+                                <!-- Large modal -->
+                                <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#largeModal3">View Site</a>
+                                <a href="http://filmarena.jack-harrison-sites.co.uk" target="_blank" class="btn btn-lg btn-primary">Open In New Tab</a>
+                                <div class="modal fade" id="largeModal3" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+                                    <div style="width:90%;" class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">Film Arena</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe src="http://filmarena.jack-harrison-sites.co.uk" height="550" width="100%" frameborder="0" scrolling="auto" id="3">
+                                                    You need an iframes capable browser to view this content.
+                                                </iframe>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom:65px; padding: 10px;" class="well well-lg">
+                <h2>Personal Projects</h2>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="img/renegademiners.jpg" alt="Renegademiners Preview" /></img>
+                            <div class="caption">
+                                <h3>Renegademiners Minecraft Community</h3>
+                                <p>A website i made using bootstrap for my Minecraft gaming community during 2012-2014. This Minecraft community is no longer active but the website is still online to view.</p>
+                                <!-- Large modal -->
+                                <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#largeModal4">View Site</a>
+                                <a href="http://renegademiners.jack-harrison-sites.co.uk" target="_blank" class="btn btn-lg btn-primary">Open In New Tab</a>
+                                <div class="modal fade" id="largeModal4" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+                                    <div style="width:90%;" class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">Renegademiners</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe src="http://renegademiners.jack-harrison-sites.co.uk" height="550" width="100%" frameborder="0" scrolling="auto">
+                                                    You need an iframes capable browser to view this content.
+                                                </iframe>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert alert-warning" role="alert">Note: Since this is a old project which has been discontinued. Certain elements will be broken and may not function due to this game server being offline.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="experience">
+
+            <div style="margin-top:50px; margin-bottom:65px; padding: 10px;" class="well well-lg">
+                <div class="page-header">
+                    <h1>Web Development Skill Level And Experience</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><img src="img/html5.png" width="64px" />HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><img src="img/css3.png" width="64px" />CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><img src="img/jquery-logo.png" width="64px" />jQuery</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><img src="img/xml.png" width="64px" /> XML</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><img src="img/wordpress.png" width="64px" /> Wordpress</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><img src="img/mysql.png" width="64px" /> MySQL</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><img src="img/php.png" width="64px" /> PHP</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="contact">
+
+
+            <div style="margin-top:50px; margin-bottom:65px; padding: 10px;" class="well well-lg">
+                <h2>How You Can Contact Me</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/gmail.png" alt="Gmail Logo" width="200" />
+                            <div class="caption">
+                                <h3>Google Mail Address</h3>
+                                <p>jebuzjack@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/yahoo-mail.png" alt="Yahoo Mail Logo" width="200" />
+                            <div class="caption">
+                                <h3>Yahoo Mail Address</h3>
+                                <p>jack_harrison11@yahoo.co.uk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/twitter.png" alt="Twitter Logo" width="200" />
+                            <div class="caption">
+                                <h3>Twitter</h3>
+                                <p>@jebuzjack</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/reddit.png" alt="Reddit Logo" width="200" />
+                            <div class="caption">
+                                <h3>Reddit</h3>
+                                <p>/u/jebuzjack</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/facebook.png" alt="Facebook Logo" width="200" />
+                            <div class="caption">
+                                <h3>Facebook</h3>
+                                <p>jack.harrison.37051</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/phone.png" alt="Phone Logo" width="200" />
+                            <div class="caption">
+                                <h3>Telephone Number</h3>
+                                <p>Please email me to request my personal phone number.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left">Copyright Jack Harrison 2015</p>
+            <p class="navbar-text pull-right"><a href="http://twitter.com/jebuzjack" target="_blank">Follow us on Twitter <img src="img/twitter.png" width="22" /></a><a href="https://www.facebook.com/jackharrisonsites" target="_blank"> Like us on Facebook <img src="img/facebook.png" width="22" /></a></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
